@@ -7,23 +7,23 @@ import io.cucumber.java.en.Then;
 
 import java.net.MalformedURLException;
 
-public class SignUp extends TestBase {
+public class SignUpWithExample extends TestBase {
+    /*SignUpPage signUpPage;
 
-    SignUpPage signUpPage;
-
-    @Given("Enter name")
+    @Given("Enter {string}")
     public void enterName(String nameTxt) throws MalformedURLException {
         android_setUp();
         signUpPage = new SignUpPage(driver);
-        signUpPage.enterName("caro");
+        signUpPage.enterName(nameTxt);
     }
 
-    @Given("Enter password")
+    @Given("Enter {string}")
     public void enterPassword(String passwordTxt) {
-        signUpPage.enterPassword("123");
+        signUpPage.enterPassword(passwordTxt);
     }
 
-    @Given("Select gender")
+    // Dúvida aqui String seria correto?
+    @Given("Select {string}")
     public void selectGender() {
         signUpPage.clickFemale();
         //signUpPage.clickMale();
@@ -42,5 +42,5 @@ public class SignUp extends TestBase {
     @Then("Sign up successfully")
     public void signUpSuccessfully() {
         tearDown();
-    }
+    }*/
 }

@@ -30,7 +30,24 @@ public class SignUpPage extends PageBase {
         sendText(nameSignUp, nameTxt);
     }
 
-    public void clickSignBtn(){
+    public void enterPassword(String passwordTxt) {
+        clear(password);
+        sendText(password, passwordTxt);
+    }
+
+    public void clickMale() {
+        click(radioMale);
+    }
+
+    public void clickFemale() {
+        click(radioFemale);
+    }
+
+    public void clickCheckBtn() {
+        click(agreeCheck);
+    }
+
+    public void clickSignBtn() {
         click(signUpBtn);
     }
 }
