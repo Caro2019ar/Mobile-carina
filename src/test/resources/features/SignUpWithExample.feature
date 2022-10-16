@@ -1,7 +1,7 @@
 Feature: Sign Up Page
 
   Scenario Outline: The user can sign up
-    Given Enter "<name>"
+    Given Enter your "<name>"
     Given Enter "<password>"
     Given Select "<gender>"
     Given Click on agree
@@ -9,6 +9,6 @@ Feature: Sign Up Page
     Then Sign up successfully
 
     Examples:
-      | name           | password | gender |
-      | Jose da Silva  | 123456   | male   |
+      | name            | password | gender |
+      | Jose da Silva   | 123456   | male   |
       | Dolores Schmidt | pass@123 | female |
