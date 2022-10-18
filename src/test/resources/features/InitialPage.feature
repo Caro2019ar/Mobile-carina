@@ -1,3 +1,4 @@
+@InitialPage
 Feature: Initial Page
 
   Scenario: The user can start on initial page
