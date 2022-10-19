@@ -1,12 +1,12 @@
 @SignUp
 Feature: Sign Up Page
-
+  I am a valid user
   Scenario Outline: The user can sign up
-    Given Enter your "<name>"
-    Given Enter "<password>"
-    Given Select "<gender>"
-    Given Click on agree
-    Given Click on signup
+    Given I enter my "<name>"
+    And Enter "<password>"
+    And Select "<gender>"
+    When Click on agree
+    And Click on signup
     Then Sign up successfully
 
     Examples:
@@ -14,11 +14,3 @@ Feature: Sign Up Page
       | Jose da Silva   | 123456   | male   |
       | Dolores Schmidt | pass@123 | female |
 
-
-#    ========== Arrumar seguindo Best practices Cucumber
-#  Scenario Outline: The user can sign up
-#    Given I am an user in the SignUp page
-#    When I enter my "<name>" and  "<password>"
-#    And Choose my "<gender>"
-#    And Agree on terms and signup
-#    Then I can sign up successfully

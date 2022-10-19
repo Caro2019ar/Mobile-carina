@@ -17,7 +17,8 @@ public class TestBase extends AbstractTestNGCucumberTests {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName", "Android");
         caps.setCapability("platformVersion", "9.0");
-        caps.setCapability("automationName", "UiAutomator2");
+        caps.setCapability("automation  Name", "UiAutomator2");
+        caps.setCapability("noReset", true);
         caps.setCapability("app", System.getProperty("user.dir") + "/apps/carinademoexample.apk");
         driver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"), caps);
     }
